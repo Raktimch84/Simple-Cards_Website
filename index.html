@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: #8EC5FC;
+            background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            width: 400px;
+            height: 600px;
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        }
+        img{
+            width: 100%;
+            height: 30%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        .text{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            width: 70%;
+            text-align: center;
+        }
+        #amount{
+            width: 80%;
+            height: 10%;
+            background-color:#8EC5FC;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .left{
+            display: flex;
+            width: fit-content;
+            gap: 15px;
+            align-items: center;
+            padding-right: 20px;
+            padding-left: 20px;
+            height: 100%;
+        }
+        .right{
+            padding-right: 20px;
+            padding-left: 20px;
+            height: 100%;
+            display:flex;
+            align-items:center;
+        }
+        .imgbox img{
+            height: 3.5rem;
+            width: 3.5rem;
+        }
+        #payment{
+            width: 80%;
+            height: 9%;
+            border-radius: 10px;
+            background-color: rgb(16, 16, 79);
+            color: white;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        }
+        a{
+            text-decoration: none;
+            color: rgb(64, 56, 56);
+            font-weight: bold;
+        }
+        .textbox p{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="icon.jpg" alt="ikon">
+            <div class="text">
+                <h2>Order Summary</h2>
+                <p> Order whatever you want from this store, 
+                you are not going to get anything delivered to you. 
+                This is just a development website.
+            </div>
+            <div id="amount">
+                <div class="left">
+                    <div class="imgbox">
+                        <img src="music.png" alt="mujik">
+                    </div>
+                    <div class="textbox">
+                        <p>Amount</p>
+                        <p>$99.9/year</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <a href="#">Change</a>
+                </div>
+            </div>
+            <button id="payment">
+                Proceed To Payment
+            </button>
+            <div class="cancel">
+                <a href="#">Cancel Order</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
